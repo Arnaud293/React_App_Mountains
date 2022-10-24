@@ -1,0 +1,99 @@
+header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    & .header-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 92vh;
+
+        @media screen and(max-width: 550px){
+            height: 90vh;
+        }
+
+        & p{
+            font-size: 1.4rem;
+            font-style: italic;
+            opacity: 0.7;
+            text-align: center;
+
+            @media screen and(max-width: 980px){
+                max-width: 75vw;
+            }
+
+        }
+    }
+
+    & i{
+        font-size: 4rem;
+    }
+
+    & nav{
+        width: 80vw;
+        height: 8vh;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba($color: #bbb9b9, $alpha: 0.4);
+
+        @media screen and(max-width: 980px){
+                height: 10vh;
+        }
+
+        & ul{
+            list-style: none;
+            display: flex;
+            margin: 0px;
+            margin-block-start: 0;
+            padding-inline-start: 0;
+            text-align: center;
+            width: 100%;
+            justify-content: space-evenly;
+        
+
+            & a{
+                text-decoration: none;
+                color: white;
+
+                
+            }
+
+            
+
+            & li{
+                font-family: $font2;
+                letter-spacing: 3px;
+                font-size: 0.8rem;
+                margin-left: 15px;
+                margin-right: 15px;
+                height: 100%;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+
+            }
+
+            & i{
+                font-size: 1.4rem;
+                margin-right: 30px;
+            }
+            
+        }
+
+        @media screen and(max-width: 980px){
+            & .nav-icon{
+                display: none;
+            }
+        }
+    }
+}
+
+.nav-menu a:hover{
+    &:hover{
+        color: black;
+        background-color: white;
+    }
+}

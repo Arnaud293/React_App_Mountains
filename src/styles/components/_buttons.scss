@@ -1,0 +1,25 @@
+.btn{
+    border-style: none;
+    width: 165px;
+    height: 45px;
+    border: solid 2px black;
+    color: black;
+    background: white;
+    text-transform: uppercase;
+    font-family: $font2;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn2{
+    letter-spacing: 2px;
+    border-style: none;
+    width: 180px;
+    height: 45px;
+    border: solid 2px $grey1;
+    color: $grey1;
+    background: none;
+    text-transform: uppercase;
+    font-family: $font2;
+    cursor: pointer;
+}

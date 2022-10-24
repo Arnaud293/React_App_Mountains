@@ -1,0 +1,41 @@
+@import url('https://allfont.net/allfont.css?fonts=merriweather-light');
+@font-face {
+    font-family: 'Inter-ExtraBold';
+    src: url('../../assets/fonts/Inter\ Extra\ Bold\ 800.otf');
+}
+
+$font1 : 'MerriweatherLight', 'sans-serif';
+$font2: 'Inter-ExtraBold';
+
+$color2: rgba($color: #edebeb, $alpha: 1);
+$color3: rgba($color: #bbb9b9, $alpha: 0.4);
+$grey1:rgb(99, 97, 97);
+$grey2:rgb(146, 144, 144);
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'MerriweatherLight';
+    color: white;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1{
+    font-family: 'Inter-ExtraBold';
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    text-align: center;
+    letter-spacing: 4px;
+
+    @media screen and(max-width: 980px){
+        max-width: 70vw;
+        font-size: 3rem;
+    }
+    @media screen and(max-width: 550px){
+        max-width: 70vw;
+        font-size: 2rem;
+    }
+
+}
