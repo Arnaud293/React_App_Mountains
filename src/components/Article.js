@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { articlesData } from '../data/articlesData';
 import MainPicure from '../assets/images/pic01.jpg';
 import SubPicture1 from '../assets/images/pic02.jpg';
 import SubPicture2 from '../assets/images/pic03.jpg';
@@ -6,6 +7,7 @@ import SubPicture2 from '../assets/images/pic03.jpg';
 const Article = () => {
 
     const [fullStory, setFullStory] = useState(false);
+    console.log(articlesData)
 
     const displayFullStory = () => {
     
@@ -30,7 +32,7 @@ const Article = () => {
                 <div className="main-article-top-content">
                     <div className="date-container">
                         <div className="border"></div>
-                        <h4 className="date">October 23, 2022</h4>
+                        <h4 className="date">{articlesData[0].date}</h4>
                         <div className="border"></div>
                     </div>
                     <h1>And this is a <br/> Massive headline</h1>
@@ -57,7 +59,7 @@ const Article = () => {
             </article>
             <article className="sub-article-container">
                 <div className="sub-article1">
-                    <h4 className="date">October 23, 2022</h4>
+                    <h4 className="date">{articlesData[1].date}</h4>
                     <h1>And this is a <br/> Massive headline</h1>
                     <div className="article-img">
                         <img src={SubPicture1} alt="man-jump-into-rocks"/>
@@ -65,10 +67,10 @@ const Article = () => {
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Et voluptatem quibusdam dicta necessitatibus ipsa ipsam cupiditate temporibus nulla error eveniet.
                     </p>
-                    <button className="btn">full story</button>
+                    <button className="btn" onClick={() => displayFullStory() + setFullStory(!fullStory)}>full story</button>
                 </div>
                 <div className="sub-article2">
-                    <h4 className="date">October 23, 2022</h4>
+                    <h4 className="date">{articlesData[2].date}</h4>
                     <h1>And this is a <br/> Massive headline</h1>
                     <div className="article-img">
                         <img src={SubPicture2} alt="man-jump-into-rocks"/>
