@@ -187,6 +187,7 @@ header nav ul i {
 .main-article-img {
   width: 75%;
   height: 50%;
+  position: relative;
 }
 
 @media screen and (max-width: 980px) {
@@ -200,6 +201,23 @@ header nav ul i {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.main-article-img span {
+  visibility: hidden;
+  display: none;
+  width: 100%;
+  transform: translateY(200px);
+  transition: 0.5s ease;
+  background: rgba(12, 12, 12, 0.7);
+  position: absolute;
+  height: 99%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.main-article-img span::-webkit-scrollbar {
+  display: none;
 }
 
 .sub-article1 {
@@ -427,6 +445,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.full-story-container {
+  filter: brightness(0.3);
 }
 
 .btn {
