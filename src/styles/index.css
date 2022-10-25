@@ -139,7 +139,6 @@ header nav ul i {
 }
 
 .main-article {
-  height: 150vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -265,7 +264,6 @@ main {
 }
 
 .sub-article-container {
-  height: 90vh;
   display: flex;
   text-align: center;
 }
