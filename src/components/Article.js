@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { articlesData } from '../data/articlesData';
-import MainPicure from '../assets/images/pic01.jpg';
-import SubPicture1 from '../assets/images/pic02.jpg';
-import SubPicture2 from '../assets/images/pic03.jpg';
+
 
 const Article = () => {
 
@@ -36,24 +34,15 @@ const Article = () => {
                         <div className="border"></div>
                     </div>
                     <h1>And this is a <br/> Massive headline</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br/>
-                    Et voluptatem quibusdam dicta necessitatibus ipsa ipsam cupiditate temporibus nulla error eveniet.<br/>
-                    Eaque, eius perferendis iste rem numquam perspiciatis expedita inventore tenetur!
+                    <p>
+                        {articlesData[0].text.slice(0,200) + '...'}
                     </p>
                 </div>
                 <div className="main-article-img">
                     <span>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Et voluptatem quibusdam dicta necessitatibus ipsa ipsam cupiditate temporibus nulla error eveniet.
-                        Eaque, eius perferendis iste rem numquam perspiciatis expedita inventore tenetur!
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Et voluptatem quibusdam dicta necessitatibus ipsa ipsam cupiditate temporibus nulla error eveniet.
-                        Eaque, eius perferendis iste rem numquam perspiciatis expedita inventore tenetur!
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Et voluptatem quibusdam dicta necessitatibus ipsa ipsam cupiditate temporibus nulla error eveniet.
-                        Eaque, eius perferendis iste rem numquam perspiciatis expedita inventore tenetur!</p>
+                        <p>{articlesData[0].text}</p>
                     </span>
-                    <img src={MainPicure} alt="man-jump-into-rocks"/>
+                    <img src={articlesData[0].img} alt="man-jump-into-rocks"/>
                 </div>
                 <button className="btn" onClick={() => displayFullStory() + setFullStory(!fullStory)}>full story</button>
             </article>
@@ -62,7 +51,7 @@ const Article = () => {
                     <h4 className="date">{articlesData[1].date}</h4>
                     <h1>And this is a <br/> Massive headline</h1>
                     <div className="article-img">
-                        <img src={SubPicture1} alt="man-jump-into-rocks"/>
+                        <img src={articlesData[1].img} alt="man-jump-into-rocks"/>
                     </div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Et voluptatem quibusdam dicta necessitatibus ipsa ipsam cupiditate temporibus nulla error eveniet.
@@ -73,7 +62,7 @@ const Article = () => {
                     <h4 className="date">{articlesData[2].date}</h4>
                     <h1>And this is a <br/> Massive headline</h1>
                     <div className="article-img">
-                        <img src={SubPicture2} alt="man-jump-into-rocks"/>
+                        <img src={articlesData[2].img} alt="man-jump-into-rocks"/>
                     </div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Et voluptatem quibusdam dicta necessitatibus ipsa ipsam cupiditate temporibus nulla error eveniet.
