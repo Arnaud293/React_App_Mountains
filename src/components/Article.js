@@ -9,7 +9,8 @@ const Article = () => {
     
         let fullStoryContainer = document.querySelector('.main-article-img span');
         fullStoryContainer.style.visibility = 'visible';
-        fullStoryContainer.style.display = 'block';
+        fullStoryContainer.style.display = 'flex';
+        fullStoryContainer.style.justifyContent = 'center';
         fullStoryContainer.style.transform ='translateY(0px)';
     }
 
@@ -32,6 +33,12 @@ const Article = () => {
                 <div className="main-article-img">
                     <span>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Et voluptatem quibusdam dicta necessitatibus ipsa ipsam cupiditate temporibus nulla error eveniet.
+                        Eaque, eius perferendis iste rem numquam perspiciatis expedita inventore tenetur!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Et voluptatem quibusdam dicta necessitatibus ipsa ipsam cupiditate temporibus nulla error eveniet.
+                        Eaque, eius perferendis iste rem numquam perspiciatis expedita inventore tenetur!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Et voluptatem quibusdam dicta necessitatibus ipsa ipsam cupiditate temporibus nulla error eveniet.
                         Eaque, eius perferendis iste rem numquam perspiciatis expedita inventore tenetur!</p>
                     </span>
