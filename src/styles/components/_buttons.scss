@@ -11,6 +11,10 @@
     margin-bottom: 20px;
     margin-top: 10px;
     cursor: pointer;
+
+    &:hover{
+        border: dotted 2px black;
+    }
 }
 
 .btn2{
@@ -24,4 +28,8 @@
     text-transform: uppercase;
     font-family: $font2;
     cursor: pointer;
+
+    &:hover{
+        border: dotted 2px black;
+    }
 }

@@ -444,6 +444,10 @@ main {
   cursor: pointer;
 }
 
+.btn:hover {
+  border: dotted 2px black;
+}
+
 .btn2 {
   letter-spacing: 2px;
   border-style: none;
@@ -455,6 +459,10 @@ main {
   text-transform: uppercase;
   font-family: "Inter-ExtraBold";
   cursor: pointer;
+}
+
+.btn2:hover {
+  border: dotted 2px black;
 }
 
 footer {
