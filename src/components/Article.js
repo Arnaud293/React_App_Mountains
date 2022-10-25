@@ -5,6 +5,8 @@ import { articlesData } from '../data/articlesData';
 const Article = () => {
 
     const [fullStory, setFullStory] = useState(false);
+    const [fullStorySub1, setFullStorySub1] = useState(false);
+    const [fullStorySub2, setFullStorySub2] = useState(false);
     console.log(articlesData)
 
     const displayFullStory = () => {
@@ -22,10 +24,41 @@ const Article = () => {
             fullStoryContainer.style.display = 'none';
         }
     }
+    const displayFullStorySub1 = () => {
+    
+        let fullStorySub1Container = document.querySelector('.sub-article1 .article-img span');
+
+        if(fullStorySub1 === true){
+        fullStorySub1Container.style.visibility = 'visible';
+        fullStorySub1Container.style.display = 'flex';
+        fullStorySub1Container.style.justifyContent = 'center';
+        fullStorySub1Container.style.transform ='translateY(0px)';
+        }
+        if(fullStorySub1 === false) {
+            fullStorySub1Container.style.visibility = 'hidden';
+            fullStorySub1Container.style.display = 'none';
+        }
+    }
+    const displayFullStorySub2 = () => {
+    
+        let fullStorySub2Container = document.querySelector('.sub-article2 .article-img span');
+
+        if(fullStorySub2 === true){
+        fullStorySub2Container.style.visibility = 'visible';
+        fullStorySub2Container.style.display = 'flex';
+        fullStorySub2Container.style.justifyContent = 'center';
+        fullStorySub2Container.style.transform ='translateY(0px)';
+        }
+        if(fullStorySub2 === false) {
+            fullStorySub2Container.style.visibility = 'hidden';
+            fullStorySub2Container.style.display = 'none';
+        }
+    }
 
     return (
         <main>
         <section className="main-content">
+
             <article className="main-article">
                 <div className="main-article-top-content">
                     <div className="date-container">
@@ -46,30 +79,37 @@ const Article = () => {
                 </div>
                 <button className="btn" onClick={() => displayFullStory() + setFullStory(!fullStory)}>full story</button>
             </article>
+
             <article className="sub-article-container">
+                
                 <div className="sub-article1">
                     <h4 className="date">{articlesData[1].date}</h4>
                     <h1>And this is a <br/> Massive headline</h1>
                     <div className="article-img">
+                        <span>
+                            <p>{articlesData[1].text}</p>
+                        </span>
                         <img src={articlesData[1].img} alt="man-jump-into-rocks"/>
                     </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Et voluptatem quibusdam dicta necessitatibus ipsa ipsam cupiditate temporibus nulla error eveniet.
-                    </p>
-                    <button className="btn" onClick={() => displayFullStory() + setFullStory(!fullStory)}>full story</button>
+                    <p>{articlesData[1].text.slice(0,200) + '...'}</p>
+                    <button className="btn" onClick={() => displayFullStorySub1() + setFullStorySub1(!fullStorySub1)}>full story</button>
                 </div>
+
                 <div className="sub-article2">
                     <h4 className="date">{articlesData[2].date}</h4>
                     <h1>And this is a <br/> Massive headline</h1>
                     <div className="article-img">
+                        <span>
+                            <p>{articlesData[2].text}</p>
+                        </span>
                         <img src={articlesData[2].img} alt="man-jump-into-rocks"/>
                     </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Et voluptatem quibusdam dicta necessitatibus ipsa ipsam cupiditate temporibus nulla error eveniet.
-                    </p>
-                    <button className="btn">full story</button>
+                    <p>{articlesData[2].text.slice(0,200) + '...'}</p>
+                    <button className="btn" onClick={() => displayFullStorySub2() + setFullStorySub2(!fullStorySub2)}>full story</button>
                 </div>
+
             </article>
+
         </section>
     </main>
     );
