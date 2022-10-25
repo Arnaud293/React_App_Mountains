@@ -5,7 +5,7 @@ main{
 
 .main-content{
     width: 80vw;
-    height: 240vh;
+    height: 265vh;
     background-color: white;
     color: black;
 
@@ -28,7 +28,10 @@ main{
     
     @media screen and(max-width: 980px){
     flex-direction: column;
-    height: 180vh;
+    height: 210vh;
+    }
+    @media screen and(max-width : 520px){
+        height: 260vh;
     }
 
     & h1{
