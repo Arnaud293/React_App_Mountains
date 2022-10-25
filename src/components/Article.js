@@ -1,17 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MainPicure from '../assets/images/pic01.jpg';
 import SubPicture1 from '../assets/images/pic02.jpg';
 import SubPicture2 from '../assets/images/pic03.jpg';
 
 const Article = () => {
 
+    const [fullStory, setFullStory] = useState(false);
+
     const displayFullStory = () => {
     
         let fullStoryContainer = document.querySelector('.main-article-img span');
+
+        if(fullStory === true){
         fullStoryContainer.style.visibility = 'visible';
         fullStoryContainer.style.display = 'flex';
         fullStoryContainer.style.justifyContent = 'center';
         fullStoryContainer.style.transform ='translateY(0px)';
+        }
+        if(fullStory === false) {
+            fullStoryContainer.style.visibility = 'hidden';
+            fullStoryContainer.style.display = 'none';
+        }
     }
 
     return (
@@ -44,7 +53,7 @@ const Article = () => {
                     </span>
                     <img src={MainPicure} alt="man-jump-into-rocks"/>
                 </div>
-                <button className="btn" onClick={() => displayFullStory()}>full story</button>
+                <button className="btn" onClick={() => displayFullStory() + setFullStory(!fullStory)}>full story</button>
             </article>
             <article className="sub-article-container">
                 <div className="sub-article1">
