@@ -6,7 +6,11 @@ import SubPicture2 from '../assets/images/pic03.jpg';
 const Article = () => {
 
     const displayFullStory = () => {
-
+    
+        let fullStoryContainer = document.querySelector('.main-article-img span');
+        fullStoryContainer.style.visibility = 'visible';
+        fullStoryContainer.style.display = 'block';
+        fullStoryContainer.style.transform ='translateY(0px)';
     }
 
     return (
@@ -26,6 +30,11 @@ const Article = () => {
                     </p>
                 </div>
                 <div className="main-article-img">
+                    <span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Et voluptatem quibusdam dicta necessitatibus ipsa ipsam cupiditate temporibus nulla error eveniet.
+                        Eaque, eius perferendis iste rem numquam perspiciatis expedita inventore tenetur!</p>
+                    </span>
                     <img src={MainPicure} alt="man-jump-into-rocks"/>
                 </div>
                 <button className="btn" onClick={() => displayFullStory()}>full story</button>
