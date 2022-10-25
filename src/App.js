@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 
 import Background from './assets/images/bg.jpg';
+import Article from './components/Article';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
           backgroundPosition : 'center'
       }}>
       <Header />
+      <Article />
     </div>
   );
 };
