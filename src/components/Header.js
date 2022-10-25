@@ -13,7 +13,7 @@ const Header = () => {
             <br/>
             <br/>
             <br/>
-            <i class="fa-solid fa-circle-arrow-down"></i>  
+            <i className="fa-solid fa-angles-down"></i>
         </div>
         <Nav />
     </header>
