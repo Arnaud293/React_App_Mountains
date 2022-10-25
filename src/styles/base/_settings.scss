@@ -1,7 +1,7 @@
 @import url('https://allfont.net/allfont.css?fonts=merriweather-light');
 @font-face {
     font-family: 'Inter-ExtraBold';
-    src: url('../../assets/fonts/Inter\ Extra\ Bold\ 800.otf');
+    src: url('../assets/fonts/Inter\ Extra\ Bold\ 800.otf');
 }
 
 $font1 : 'MerriweatherLight', 'sans-serif';
@@ -12,6 +12,13 @@ $color3: rgba($color: #bbb9b9, $alpha: 0.4);
 $grey1:rgb(99, 97, 97);
 $grey2:rgb(146, 144, 144);
 
+
+html, body, #root, #root>div {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flow-root;
+}
 
 body{
     margin: 0;

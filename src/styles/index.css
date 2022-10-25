@@ -1,7 +1,14 @@
 @import url("https://allfont.net/allfont.css?fonts=merriweather-light");
 @font-face {
   font-family: 'Inter-ExtraBold';
-  src: url("../../assets/fonts/Inter Extra Bold 800.otf");
+  src: url("../assets/fonts/Inter Extra Bold 800.otf");
+}
+
+html, body, #root, #root > div {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flow-root;
 }
 
 body {
