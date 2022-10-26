@@ -12,6 +12,12 @@ main{
     @media screen and(max-width: 980px){
         height: auto;
     }
+    @media screen and(max-width: 631px){
+        min-height: 375vh;
+    }
+    @media screen and(max-width: 520px){
+        min-height: 375vh;
+    }
 
     & .date-container{
         display: grid;

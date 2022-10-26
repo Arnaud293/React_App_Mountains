@@ -137,6 +137,11 @@ header nav ul i {
   background-color: white;
 }
 
+.nav-active {
+  color: black;
+  background-color: white;
+}
+
 .main-article {
   display: flex;
   flex-direction: column;
@@ -309,6 +314,18 @@ main {
 @media screen and (max-width: 980px) {
   .main-content {
     height: auto;
+  }
+}
+
+@media screen and (max-width: 631px) {
+  .main-content {
+    min-height: 375vh;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .main-content {
+    min-height: 375vh;
   }
 }
 
