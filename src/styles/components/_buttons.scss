@@ -29,6 +29,10 @@
     font-family: $font2;
     cursor: pointer;
 
+    @media screen and(max-width: 281px){
+        width: 100%;
+    }
+
     &:hover{
         border: dotted 2px black;
     }

@@ -25,6 +25,10 @@ main{
         gap: 50px;
         width: 100%;
         grid-template-columns: 1fr 150px 1fr;
+
+        @media screen and(max-width: 281px){
+            gap: 0px;
+        }
     }
 }
 
@@ -37,7 +41,10 @@ main{
     height: 210vh;
     }
     @media screen and(max-width : 520px){
-        height: 260vh;
+        height: 280vh;
+    }
+    @media screen and(max-width: 281px){
+        height: 320vh;
     }
 
     & h1{
@@ -131,10 +138,18 @@ main{
         letter-spacing: 2px;
         font-size: 0.8rem;
         grid-column-start: 2;
+
+        @media screen and(max-width:281px){
+            font-size: 0.6rem;
+        }
     }
 
     & p{
         font-size: 1.1rem;
+
+        @media screen and(max-width:281px){
+            font-size: 0.5rem;
+        }
     }
 
     & .address  {
@@ -146,6 +161,9 @@ main{
         @media screen and(max-width: 980px){
         border-top: 1px solid rgba(187, 185, 185, 0.4);
         }
+        @media screen and(max-width:281px){
+            grid-template-columns: 30px 80px 1fr;
+        }
     
     }
 
@@ -154,17 +172,27 @@ main{
         grid-template-columns:35px 130px 1fr;
         border-bottom: 1px solid $color3;
         align-items: center;
+        @media screen and(max-width:281px){
+            grid-template-columns: 30px 80px 1fr;
+        }
     }
     & .email{
         display: grid;
         grid-template-columns:35px 130px 1fr;
         border-bottom: 1px solid $color3;
         align-items: center;
+        @media screen and(max-width:281px){
+            grid-template-columns: 30px 80px 1fr;
+        }
     }
     & .social{
         display: grid;
         grid-template-columns:35px 130px 1fr;
         align-items: center;
+
+        @media screen and(max-width:281px){
+            grid-template-columns: 30px 80px 1fr;
+        }
 
         & i{
             width: 45px;
@@ -176,6 +204,12 @@ main{
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @media screen and(max-width:281px){
+                font-size: 1rem;
+                width: 30px;
+                height: 30px;
+            }
         }
     }
 }

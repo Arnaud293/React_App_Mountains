@@ -41,6 +41,12 @@ h1 {
   }
 }
 
+@media screen and (max-width: 281px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
 header {
   height: 100vh;
   display: flex;
@@ -119,6 +125,12 @@ header nav ul li {
   text-transform: uppercase;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 281px) {
+  header nav ul li {
+    font-size: 0.4rem;
+  }
 }
 
 header nav ul i {
@@ -337,6 +349,12 @@ main {
   grid-template-columns: 1fr 150px 1fr;
 }
 
+@media screen and (max-width: 281px) {
+  .main-content .date-container {
+    gap: 0px;
+  }
+}
+
 .sub-article-container {
   display: flex;
   text-align: center;
@@ -351,7 +369,13 @@ main {
 
 @media screen and (max-width: 520px) {
   .sub-article-container {
-    height: 260vh;
+    height: 280vh;
+  }
+}
+
+@media screen and (max-width: 281px) {
+  .sub-article-container {
+    height: 320vh;
   }
 }
 
@@ -455,8 +479,20 @@ main {
   grid-column-start: 2;
 }
 
+@media screen and (max-width: 281px) {
+  .infos-container h4 {
+    font-size: 0.6rem;
+  }
+}
+
 .infos-container p {
   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 281px) {
+  .infos-container p {
+    font-size: 0.5rem;
+  }
 }
 
 .infos-container .address {
@@ -472,11 +508,23 @@ main {
   }
 }
 
+@media screen and (max-width: 281px) {
+  .infos-container .address {
+    grid-template-columns: 30px 80px 1fr;
+  }
+}
+
 .infos-container .phone {
   display: grid;
   grid-template-columns: 35px 130px 1fr;
   border-bottom: 1px solid rgba(187, 185, 185, 0.4);
   align-items: center;
+}
+
+@media screen and (max-width: 281px) {
+  .infos-container .phone {
+    grid-template-columns: 30px 80px 1fr;
+  }
 }
 
 .infos-container .email {
@@ -486,10 +534,22 @@ main {
   align-items: center;
 }
 
+@media screen and (max-width: 281px) {
+  .infos-container .email {
+    grid-template-columns: 30px 80px 1fr;
+  }
+}
+
 .infos-container .social {
   display: grid;
   grid-template-columns: 35px 130px 1fr;
   align-items: center;
+}
+
+@media screen and (max-width: 281px) {
+  .infos-container .social {
+    grid-template-columns: 30px 80px 1fr;
+  }
 }
 
 .infos-container .social i {
@@ -502,6 +562,14 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 281px) {
+  .infos-container .social i {
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .full-story-container {
@@ -538,6 +606,12 @@ main {
   text-transform: uppercase;
   font-family: "Inter-ExtraBold";
   cursor: pointer;
+}
+
+@media screen and (max-width: 281px) {
+  .btn2 {
+    width: 100%;
+  }
 }
 
 .btn2:hover {

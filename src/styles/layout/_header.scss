@@ -74,6 +74,10 @@ header{
                 display: flex;
                 align-items: center;
 
+                @media screen and(max-width: 281px){
+                    font-size: 0.4rem;
+                }
+
             }
 
             & i{

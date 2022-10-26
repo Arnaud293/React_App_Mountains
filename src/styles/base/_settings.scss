@@ -44,5 +44,8 @@ h1{
         max-width: 70vw;
         font-size: 2rem;
     }
+    @media screen and(max-width:281px){
+        font-size: 1.5rem;
+    }
 
 }
